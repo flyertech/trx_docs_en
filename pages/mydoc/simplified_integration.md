@@ -1,24 +1,24 @@
 ---
-title: Simplified inteagration
+title: Simplified integration
 sidebar: mydoc_sidebar
 permalink: simplified_integration.html
 folder: mydoc
 ---
 
-## Panoramica
+## Overview
 {% include_relative partials/integration_overview.md %}
 
-{% include callout.html content="L'itegrazione semplificata è sconsigliata per l'attività di publishing in quanto riduce quantità e qualità della profilazione automatica, e quindi riduce le performance di lead generation." %}
+{% include callout.html content="The semplified integration is discouraged for publishers since it reduces the profiling quality, and thus the lead generation performance." %}
 
-## Inserisci il loader in tutte le pagine
-Il tag va inserito nella sezione `<head>` della pagina.
+## Put the loader tag in all the pages
+The loader tag goes in the `<head>` of your base template.
 {% include_relative snippets/loader.md %}
 
-## Inserisci il tag `viewPage` in tutte le pagine
-Questo tag può essere inserito preferibilmente prima del tag di chiusura `</body>`, oppure dopo il loader nel tag `<head>`.
+## Put the `viewPage` tag in all the pages
+This tag should be inserted preferably before the closing `</body>`, or in any case after the loader inside the `<head>` tag.
 {% include_relative snippets/viewpage.md %}
 
-Puoi anche invocare l'evento `viewPage` contestualmente alla creazione del loader:
+You can also invoke the `viewPage` along with the loader creation:
 ```html
 <script>
     window._trx = window._trx || [];
@@ -30,9 +30,9 @@ Puoi anche invocare l'evento `viewPage` contestualmente alla creazione del loade
 <script src="https://static.transactionale.com/trx/v2/trx.js" async="true"></script>
 ```
 
-## Inserisci il tag `trackTransaction` nella pagina di conferma ordine
-Puoi inserire questo tag preferibilmente prima del tag di chiusura `</body>`, oppure dopo il loader nel tag `<head>`.
-Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'ordine appena concluso.
+## Put the `trackTransaction` in the order confirmation page
+This tag should be inserted preferably before the closing `</body>`, or in any case after the loader inside the `<head>` tag.
+You must fill as many fields as you can with the actual values relative to the order just submitted.
 
 {% include_relative snippets/tracktransaction.md %}
 
