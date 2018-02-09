@@ -68,6 +68,13 @@ entries:
       url: /webhook.html
       output: web, pdf
 
+  - title: Language
+    output: web, pdf
+    folderitems:
+
+    - title: Italiano
+      url: https://flyertech.github.io/trx_docs_it/
+      output: web, pdf
     
 
   

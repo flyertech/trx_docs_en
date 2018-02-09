@@ -19,7 +19,7 @@ Then, you should implement the snippet in the following pages:
 - [Shopping Basket](#shopping-basket)
 - [Order Confirmation Page](#order-confirmation-page)
 
-You should also implement the [lead-webhook](#receiving-leads) to receive leads in real-time.
+You can also implement the [lead-webhook](#receiving-leads) to receive leads in real-time.
 
 ### Home page 
 The [home page snippet](snippet_homepage.md) allows monitoring the so-called *bounces*: users that land on the website and then leave without shopping.
