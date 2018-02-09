@@ -73,7 +73,7 @@ entries:
     folderitems:
 
     - title: Italiano
-      url: https://flyertech.github.io/trx_docs_it/
+      external_url: https://flyertech.github.io/trx_docs_it/
       output: web, pdf
     
 
