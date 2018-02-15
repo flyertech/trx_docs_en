@@ -38,6 +38,4 @@ If you provide the products by ID only, make sure you use the same ID as contain
     });
 ```
 
-[Google merchant categories (ENG)](https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
-[Google merchant categories (ITA)](https://www.google.com/basepages/producttype/taxonomy-with-ids.it-IT.txt)
-[Google merchant categories (ESP)](https://www.google.com/basepages/producttype/taxonomy-with-ids.es-ES.txt)
+{% include_relative partials/google_categories.md %}

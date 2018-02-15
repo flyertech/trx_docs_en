@@ -9,7 +9,18 @@ summary: V2 Integration Details
 
 This is the **Transactionale tech knowledge base**, where you can find all the details to integrate your e-Shop with Transactionale.
 
+{% comment %}
 {% include callout.html content="If your shop is based on **WooCommerce** or **Prestashop**, we can provide you ready-made plugins that you can install and configure autonomously, without any tech involved." %}
+{% endcomment %}
+
+# How to? Technical instructions
+
+You can integrate with us in two ways:
+
+  - [Full integration](full_integration.html), **recommended** for best performance
+  - [Simplified integration](simplified_integration.html)
+
+You can enable the [development mode](debugging.html) to ensure the correctness of the integration.
 
 # How the network works
 
@@ -39,11 +50,3 @@ In addition, if you also are an [advertiser](#advertiser), you will be able to r
 2. Every time an order is submitted, your shop **notifies** us about it through a **tracking snippet**, usually on the thank-you page
 3. As soon as we receive the notification, Transactionale will send Lisa a **transactional email** with targeted offers
 4. If Lisa clicks on an offer, a **lead** will be generated
-
-## How to? Technical instructions
-
-You can integrate with us in two ways:
-
-  - [Full integration](full_integration.html), **recommended** for best performance
-  - [Simplified integration](simplified_integration.html)
-

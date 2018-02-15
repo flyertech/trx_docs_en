@@ -15,3 +15,5 @@ Tracks a **completed transaction** (order, booking etc.). This allows tracking c
 For `web` touchpoints you should set **touchpointType**: "web" e chiamerà implicitamente [triggerWebTouchpoint](#triggerWebTouchpoint) and also provide a `touchpointId` that you can find on the *Monetize* section of your Transactionale account.
 
 {% include_relative snippets/tracktransaction.md %}
+
+{% include_relative partials/google_categories.md %}
