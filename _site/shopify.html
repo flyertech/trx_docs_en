@@ -183,7 +183,7 @@
       
   
   <li>
-      <a href="#">Technical custom instructions</a>
+      <a href="#">Technical instructions custom</a>
       <ul>
           
           
@@ -236,7 +236,7 @@
       
   
   <li>
-      <a href="#">Technical platform instructions</a>
+      <a href="#">Technical instructions other platforms</a>
       <ul>
           
           
@@ -353,23 +353,16 @@ The snippet is made up of two parts:</p>
 
 <p><img src="images/shopify/checkout.png" alt="image-title-here" class="img-responsive" /></p>
 
-<div class="bs-callout bs-callout-">In the following snippet you will need to replace the “ApiKey” with your API Key that you will find from your Transactionale account under  <strong>My Account -&gt; Integration</strong>. Copy it</div>
+<div class="bs-callout bs-callout-">In the following snippet you will need to replace the “ApiKey” with your API Key that you will find in your Transactionale account under  <strong>My Account -&gt; Integration</strong>. Copy it</div>
 
 <p><img src="images/shopify/apikey.png" alt="image-title-here" class="img-responsive" /></p>
 
-<p>Paste the following snippet in <strong>Additional script</strong></p>
+<p>Paste the following snippet in <strong>Additional scripts</strong></p>
 
 <p><img src="images/shopify/add_script.png" alt="image-title-here" class="img-responsive" /></p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
-	<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span> <span class="o">||</span> <span class="p">[];</span>
-	<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
-		<span class="na">event</span><span class="p">:</span> <span class="s1">'setAccount'</span><span class="p">,</span> <span class="na">account</span><span class="p">:</span> <span class="s1">'APIKey'</span><span class="p">,</span> <span class="na">country</span><span class="p">:</span> <span class="s1">'IT'</span>
-	<span class="p">});</span>
-<span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://static.transactionale.com/trx/v2/trx.js"</span> <span class="na">async=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script&gt;</span>
-	<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
 	<span class="p">{</span>
 		<span class="s1">'event'</span> <span class="p">:</span> <span class="s1">'trackTransaction'</span><span class="p">,</span>
 	  	<span class="s1">'transaction'</span><span class="p">:{</span>
@@ -402,12 +395,15 @@ The snippet is made up of two parts:</p>
 			<span class="s1">'email'</span><span class="p">:</span> <span class="s2">"{{order.customer.email}}"</span><span class="p">,</span>
 			<span class="s1">'optin'</span> <span class="p">:</span> <span class="s2">"{{checkout.buyer_accepts_marketing}}"</span><span class="p">,</span>
 		<span class="p">},</span>
-	<span class="p">});</span>
+	<span class="p">}</span>
+<span class="p">);</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
 <p>Click on <strong>Save</strong></p>
 
 <p><img src="images/shopify/save_settings.png" alt="image-title-here" class="img-responsive" /></p>
+
+<hr />
 
 <h2 id="where-should-you-implement-the-loader-and-the-viewpage-event">Where should you implement the loader and the viewPage event?</h2>
 
@@ -415,11 +411,11 @@ The snippet is made up of two parts:</p>
 
 <p><img src="images/shopify/online_store.png" alt="image-title-here" class="img-responsive" /></p>
 
-<p>From <strong>Themes</strong> click on <strong>Theme Actions-&gt;Edit Code</strong></p>
+<p>From <strong>Themes-&gt;current theme</strong> click on <strong>Actions-&gt;Edit Code</strong></p>
 
 <p><img src="images/shopify/edit_code.png" alt="image-title-here" class="img-responsive" /></p>
 
-<div class="bs-callout bs-callout-">In the following snippet you will need to replace the “ApiKey” with your API Key that you will find from your Transactionale account under  <strong>My Account -&gt; Integration</strong>. Copy it </div>
+<div class="bs-callout bs-callout-">In the following snippet you will need to replace the “ApiKey” with your API Key that you will find in your Transactionale account under  <strong>My Account -&gt; Integration</strong>. Copy it </div>
 
 <p>Click on <strong>theme.liquid</strong> and paste the code  inside the <strong>&lt;head&gt;</strong> tag of the page</p>
 
@@ -456,7 +452,7 @@ The snippet is made up of two parts:</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2018 -2015 Transactionale - FlyerTech s.r.l. All rights reserved. <br />
- Site last generated: Mar 8, 2018 <br />
+ Site last generated: Mar 9, 2018 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

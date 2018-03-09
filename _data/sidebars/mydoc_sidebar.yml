@@ -14,7 +14,7 @@ entries:
       url: /index.html
       output: web, pdf
 
-  - title: Technical custom instructions
+  - title: Technical instructions custom
     output: web, pdf
     folderitems:
 
@@ -68,7 +68,7 @@ entries:
       url: /webhook.html
       output: web, pdf
 
-  - title: Technical platform instructions
+  - title: Technical instructions other platforms
     output: web, pdf
     folderitems:
     
