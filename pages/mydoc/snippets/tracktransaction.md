@@ -35,8 +35,7 @@ window._trx.push(
         },
         // Example of integration of ads directly in the page
         touchpointType: 'web', // Default: mail
-        touchpointId: '123', // REQUIRED if touchpointType = 'web'
-        containerId: 'test' // Default: tr_touchpoint_id - the <div> where offers will be displayed
+        touchpointId: '123' // REQUIRED if touchpointType = 'web'
     }
 );
 ```

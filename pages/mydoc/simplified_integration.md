@@ -36,6 +36,10 @@ You must fill as many fields as you can with the actual values relative to the o
 
 {% include_relative snippets/tracktransaction.md %}
 
+## Web touchpoint
+If you are using a web touchpoint, you should define where you want the offers to appear in your page.
+To do this, insert a `<div id="tr_touchpoint_container"></div>` in the desired place.
+
 
 
 
