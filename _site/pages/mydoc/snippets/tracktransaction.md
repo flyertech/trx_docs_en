@@ -34,9 +34,8 @@ window._trx.push(
             optin: true // if the users opted in to receiving commercial offers
         },
         // Example of integration of ads directly in the page
-        touchpointType: 'web', // Default: mail
-        touchpointId: '123', // REQUIRED if touchpointType = 'web'
-        containerId: 'test' // Default: tr_touchpoint_id - the <div> where offers will be displayed
+        touchpointType: 'web', // Allowed values: web, mail, auto. Default: mail
+        touchpointId: '123' // Optional, only if touchpointType is 'web' or 'auto'
     }
 );
 ```

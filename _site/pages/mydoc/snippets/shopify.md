@@ -1,6 +1,13 @@
 {% raw %}
 <script>
-window._trx.push(
+	window._trx = window._trx || [];
+	window._trx.push({
+		event: 'setAccount', account: 'APIKey', country: 'IT'
+	});
+</script>
+<script src="https://static.transactionale.com/trx/v2/trx.js" async="true"></script>
+<script>
+	window._trx.push(
 	{
 		'event' : 'trackTransaction',
 	  	'transaction':{
@@ -33,7 +40,6 @@ window._trx.push(
 			'email': "{{order.customer.email}}",
 			'optin' : "{{checkout.buyer_accepts_marketing}}",
 		},
-	}
-);
+	});
 </script>
 {% endraw %}
