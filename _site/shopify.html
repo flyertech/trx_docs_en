@@ -362,7 +362,14 @@ The snippet is made up of two parts:</p>
 <p><img src="images/shopify/add_script.png" alt="image-title-here" class="img-responsive" /></p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
-<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
+	<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span> <span class="o">||</span> <span class="p">[];</span>
+	<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+		<span class="na">event</span><span class="p">:</span> <span class="s1">'setAccount'</span><span class="p">,</span> <span class="na">account</span><span class="p">:</span> <span class="s1">'APIKey'</span><span class="p">,</span> <span class="na">country</span><span class="p">:</span> <span class="s1">'IT'</span>
+	<span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://static.transactionale.com/trx/v2/trx.js"</span> <span class="na">async=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+	<span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
 	<span class="p">{</span>
 		<span class="s1">'event'</span> <span class="p">:</span> <span class="s1">'trackTransaction'</span><span class="p">,</span>
 	  	<span class="s1">'transaction'</span><span class="p">:{</span>
@@ -395,8 +402,7 @@ The snippet is made up of two parts:</p>
 			<span class="s1">'email'</span><span class="p">:</span> <span class="s2">"{{order.customer.email}}"</span><span class="p">,</span>
 			<span class="s1">'optin'</span> <span class="p">:</span> <span class="s2">"{{checkout.buyer_accepts_marketing}}"</span><span class="p">,</span>
 		<span class="p">},</span>
-	<span class="p">}</span>
-<span class="p">);</span>
+	<span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
 <p>Click on <strong>Save</strong></p>
@@ -452,7 +458,7 @@ The snippet is made up of two parts:</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2018 -2015 Transactionale - FlyerTech s.r.l. All rights reserved. <br />
- Site last generated: Mar 9, 2018 <br />
+ Site last generated: Apr 4, 2018 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
