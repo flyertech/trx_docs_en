@@ -19,7 +19,6 @@ Click on  **Checkout**
 
 ![image-title-here](images/shopify/checkout.png){:class="img-responsive"}
 
-{% include callout.html content="In the following snippet you will need to replace the \"ApiKey\" with your API Key that you will find in your Transactionale account under  **My Account -> Integration**. Copy it" %}
 
 ![image-title-here](images/shopify/apikey.png){:class="img-responsive"}
 
@@ -27,9 +26,9 @@ Paste the following snippet in **Additional scripts**
 
 ![image-title-here](images/shopify/add_script.png){:class="img-responsive"}
 
+{% include callout.html content="In the following snippet you will need to replace the \"ApiKey\" with your API Key that you will find in your Transactionale account under  **My Account -> Integration**. Copy it" %}
 
 {% highlight html %}{% include_relative snippets/shopify.md %}{% endhighlight %}
-
 
 Click on **Save** 
 
