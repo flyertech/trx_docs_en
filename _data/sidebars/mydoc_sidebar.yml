@@ -76,6 +76,22 @@ entries:
       url: /shopify.html
       output: web, pdf
 
+    - title: Prestashop <= 1.6
+      url: /prestashop16.html
+      output: web, pdf
+
+    - title: Prestashop >= 1.7
+      url: /prestashop17.html
+      output: web, pdf
+    
+    - title: Woocommerce >= 3.3.0
+      url: /woocommerce330.html
+      output: web, pdf
+
+    - title: Magento 1.x
+      url: /magento.html
+      output: web, pdf
+
   - title: Language
     output: web, pdf
     folderitems:
@@ -83,6 +99,3 @@ entries:
     - title: Italiano
       external_url: https://flyertech.github.io/trx_docs_it/
       output: web, pdf
-    
-
-  
