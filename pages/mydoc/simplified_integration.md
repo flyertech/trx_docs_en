@@ -19,20 +19,13 @@ This tag should be inserted preferably before the closing `</body>`, or in any c
 {% include_relative snippets/viewpage.md %}
 
 You can also invoke the `viewPage` along with the loader creation:
-```html
-<script>
-    window._trx = window._trx || [];
-    window._trx.push(
-        { event: 'setAccount', account: '**API-KEY**', country: 'IT' },
-        { event: 'viewPage' }
-    );
-</script>
-<script src="https://static.transactionale.com/trx/v2/trx.js" async="true"></script>
-```
+{% include_relative snippets/loader_viewPage.md %}
 
 ## Put the `trackTransaction` in the order confirmation page
 This tag should be inserted preferably before the closing `</body>`, or in any case after the loader inside the `<head>` tag.
 You must fill as many fields as you can with the actual values relative to the order just submitted.
+
+{% include callout.html content="WARNING: The sample values ('xxxx') must be replaced with the corresponding variables, you can delete the fields whose value isn't retain." %}
 
 {% include_relative snippets/tracktransaction.md %}
 
