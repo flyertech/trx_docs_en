@@ -29,9 +29,9 @@ To do this, insert a `<div id="tr_touchpoint_container"></div>` in the desired p
 ## Offers banner
 If you want to use the banner version of the web touchpoint, you have two available layouts to choose from: horizontal (default) or vertical.
 
-![Horizontal banner](images/banner_horizontal.png){:class="img-responsive"}
+{% include image.html file="banner_horizontal.png" url="images/banner_horizontal.png" %}
 
 You can enable a vertical layout by adding the `tr-touchpoint-layout-vertical` class to the `<div>` like this:<br>
  `<div id="tr_touchpoint_container" class="tr-touchpoint-layout-vertical"></div>` <br>
 The banner will appear similar to the following:
-![Banner verticale](images/banner_vertical.png){:class="img-responsive"}
+{% include image.html file="banner_vertical.png" url="images/banner_vertical.png" %}

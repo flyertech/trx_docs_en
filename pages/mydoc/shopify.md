@@ -13,18 +13,17 @@ folder: mydoc
 
 From your Shopify **Admin** page, select **Settings**
 
-![image-title-here](images/shopify/settings.png){:class="img-responsive"}
+{% include image.html file="shopify/settings.png" url="images/shopify/settings.png" %}
 
 Click on  **Checkout**
 
-![image-title-here](images/shopify/checkout.png){:class="img-responsive"}
+{% include image.html file="shopify/checkout.png" url="images/shopify/checkout.png" %}
 
-
-![image-title-here](images/shopify/apikey.png){:class="img-responsive"}
+{% include image.html file="shopify/apikey.png" url="images/shopify/apikey.png" %}
 
 Paste the following snippet in **Additional scripts**
 
-![image-title-here](images/shopify/add_script.png){:class="img-responsive"}
+{% include image.html file="shopify/add_script.png" url="images/shopify/add_script.png" %}
 
 {% include callout.html content="In the following snippet you will need to replace the \"ApiKey\" with your API Key that you will find in your Transactionale account under  **My Account -> Integration**. Copy it" %}
 
@@ -32,7 +31,7 @@ Paste the following snippet in **Additional scripts**
 
 Click on **Save** 
 
-![image-title-here](images/shopify/save_settings.png){:class="img-responsive"}
+{% include image.html file="shopify/save_settings.png" url="images/shopify/save_settings.png" %}
 
 <hr />
 
@@ -41,22 +40,21 @@ Click on **Save**
 
 From your Shopify **Admin** page, select **Online Store**
 
-![image-title-here](images/shopify/online_store.png){:class="img-responsive"}
+{% include image.html file="shopify/online_store.png" url="images/shopify/online_store.png" %}
 
 From **Themes->current theme** click on **Actions->Edit Code**
 
-![image-title-here](images/shopify/edit_code.png){:class="img-responsive"}
+{% include image.html file="shopify/edit_code.png" url="images/shopify/edit_code.png" %}
 
 {% include callout.html content="In the following snippet you will need to replace the \"ApiKey\" with your API Key that you will find in your Transactionale account under  **My Account -> Integration**. Copy it " %}
 
 Click on **theme.liquid** and paste the code  inside the **<head>** tag of the page 
 
-![image-title-here](images/shopify/snippet.png){:class="img-responsive"}
+{% include image.html file="shopify/snippet.png" url="images/shopify/snippet.png" %}
 
 {% include_relative snippets/loader_viewPage.md %}
 
 Click on **Save** 
 
-![image-title-here](images/shopify/save_edit_code.png){:class="img-responsive"}
-
+{% include image.html file="shopify/save_edit_code.png" url="images/shopify/save_edit_code.png" %}
 
