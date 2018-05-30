@@ -33,6 +33,19 @@ The details of the fields displayed are shown below:
 
 {% include image.html file="magento/webhook.png" url="/images/magento/webhook.png" %}
 
+You will also need to complete the configuration for the single store.
+
+The details of the fields displayed are shown below:
+
+*Country Code*| the two-letter ISO code for the country in which your shop operates. I.E. IT.
+*Touchpoint Type*| select Auto
+*Web Touchpoint Id*|if using the web touchpoint described above, you can specify an id, otherwise it will take a default id.
+*Web Touchpoint Text*|if using the web touchpoint described above, you can specify the text to display above the offers.
+*Import leads automatically*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL.
+*Opt-in Privacy Link* | your privacy policy link.
+
+{% include image.html file="magento/configuration_store.png" url="/images/magento/configuration_store.png" %}
+
 
 ### Last steps
 
