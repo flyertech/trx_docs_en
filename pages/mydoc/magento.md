@@ -5,14 +5,14 @@ sidebar: mydoc_sidebar
 folder: mydoc
 ---
 
-### Obtaining the latest Prestashop module
+### Obtaining the latest Magento module
 You can download the latest version from your dashboard by going to **My Account -> Integration -> Select Magento 1.x**, click **Download the plugin**.
 
 {% include image.html file="magento/downloadplugin.png" url="images/magento/downloadplugin.png" %}
 
 ### Installing the module
 
-From **Magento Connect Manager** click on **Scegli File** poi **Upload**.
+From **Magento Connect Manager** click on **Choose file** and then **Upload**.
 
 {% include image.html file="magento/connectmanager.png" url="images/magento/connectmanager.png" %}
 
@@ -26,9 +26,9 @@ You will be redirected to the module configuration page
 
 The details of the fields displayed are shown below:
 
-*Attivato*| select Yes to enable the plugin.
+*Enabled*| select Yes to enable the plugin.
 *Debug*| select No.
-*Auth Key*|his is used to identify your account. **Follow the instructions below to fill it**.
+*Auth Key*|this is is used to identify your account. **Follow the instructions below to fill it**.
 *Import leads automatically*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL.
 
 {% include image.html file="magento/webhook.png" url="images/magento/webhook.png" %}
@@ -38,7 +38,7 @@ You will also need to complete the configuration for the single store.
 The details of the fields displayed are shown below:
 
 *Country Code*| the two-letter ISO code for the country in which your shop operates. I.E. IT.
-*Touchpoint Type*| select Auto
+*Touchpoint Type*| select Auto to automatically select the best choice
 *Web Touchpoint Id*|if using the web touchpoint described above, you can specify an id, otherwise it will take a default id.
 *Web Touchpoint Text*|if using the web touchpoint described above, you can specify the text to display above the offers.
 *Import leads automatically*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL.
@@ -69,3 +69,4 @@ Paste the link you see in the **My Account-> Integration** section of your Trans
 You can check the correct functioning of the technological integration and the webhook url through these simple instructions:
 
 {% include_relative partials/link_verify.md %}
+
