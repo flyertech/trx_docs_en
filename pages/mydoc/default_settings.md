@@ -5,9 +5,6 @@ permalink: mydoc_default_settings.html
 folder: mydoc
 ---
 
-## Overview
-??
-
 ## Snippet esempio
 
 Codice di esempio

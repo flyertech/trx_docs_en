@@ -59,3 +59,9 @@ Copy your Auth Key from your Transactionale account under  **My Account-> Integr
 After completing all the required fields click on Save.
 
 {% include image.html file="woocommerce/configurationsave.png" url="images/woocommerce/configurationsave.png" %}
+
+### Verify integration and webhook
+
+You can check the correct functioning of the technological integration and the webhook url through these simple instructions:
+
+{% include_relative partials/link_verify.md %}

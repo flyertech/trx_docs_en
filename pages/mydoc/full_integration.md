@@ -5,10 +5,10 @@ permalink: full_integration.html
 folder: mydoc
 ---
 
-## Overview
+### Overview
 {% include_relative partials/integration_overview.md %}
 
-## Where should you implement the code?
+### Where should you implement the code?
 First, you have to insert the loader [as described here.](snippet_loader.html)
 
 Then, you should implement the snippet in the following pages:
@@ -48,7 +48,7 @@ This is also required to allow **deduplication** of leads, to avoid paying for c
 
 Please read the details in the [webhook](webhook.html) section.
 
-## Optional or custom integrations
+### Optional or custom integrations
 TODO
 
 ### Generic page view

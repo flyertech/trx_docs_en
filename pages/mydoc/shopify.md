@@ -6,10 +6,10 @@ folder: mydoc
 ---
 
 
-## Overview
+### Overview
 {% include_relative partials/integration_overview.md %}
 
-## Where should you implement the trackTransaction code? 
+### Where should you implement the trackTransaction code? 
 
 From your Shopify **Admin** page, select **Settings**
 
@@ -35,7 +35,7 @@ Click on **Save**
 
 <hr />
 
-##  Where should you implement the loader and the viewPage event? 
+###  Where should you implement the loader and the viewPage event? 
 
 
 From your Shopify **Admin** page, select **Online Store**
@@ -57,4 +57,10 @@ Click on **theme.liquid** and paste the code  inside the **<head>** tag of the p
 Click on **Save** 
 
 {% include image.html file="shopify/save_edit_code.png" url="images/shopify/save_edit_code.png" %}
+
+### Verify integration and webhook
+
+You can check the correct functioning of the technological integration and the webhook url through these simple instructions:
+
+{% include_relative partials/link_verify.md %}
 

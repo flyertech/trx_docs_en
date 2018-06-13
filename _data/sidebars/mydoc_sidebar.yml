@@ -92,6 +92,18 @@ entries:
       url: /magento.html
       output: web, pdf
 
+  - title: Verify integration and webhook
+    output: web, pdf
+    folderitems:
+
+      - title: Verify integration
+        url: /verify_integration.html
+        output: web, pdf
+
+      - title: Verify webhook
+        url: /verify_webhook.html
+        output: web, pdf
+
   - title: Language
     output: web, pdf
     folderitems:
