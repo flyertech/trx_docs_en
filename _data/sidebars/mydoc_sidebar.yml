@@ -92,6 +92,10 @@ entries:
       url: /magento.html
       output: web, pdf
 
+    - title: Storeden
+      url: /storeden.html
+      output: web, pdf
+
   - title: Verify integration and webhook
     output: web, pdf
     folderitems:
