@@ -36,6 +36,7 @@ window._trx.push(
         // Example of integration of ads directly in the page
         touchpointType: 'auto',
     }
+);
 ```
 ```html
 <div id="tr_touchpoint_container"></div>
