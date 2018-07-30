@@ -115,3 +115,7 @@ entries:
     - title: Italiano
       external_url: https://flyertech.github.io/trx_docs_it/
       output: web, pdf
+
+    - title: Español
+      external_url: https://flyertech.github.io/trx_docs_es/
+      output: web, pdf
