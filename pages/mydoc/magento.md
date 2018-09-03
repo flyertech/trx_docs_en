@@ -44,7 +44,7 @@ The details of the fields displayed are shown below:
 *Import leads automatically*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL.
 *Opt-in Privacy Link* | your privacy policy link.
 
-{% include image.html file="magento/configuration_store.png" url="images/magento/configuration_store.png" %}
+{% include image.html file="magento/magento_setting_2.png" url="images/magento/magento_setting_2.png" %}
 
 
 ### Last steps
