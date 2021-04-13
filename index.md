@@ -15,10 +15,9 @@ This is the **Transactionale tech knowledge base**, where you can find all the d
 
 # How to? Technical instructions
 
-You can integrate with us in two ways:
+Click the following link to read the instructions:
 
-  - [Full integration](full_integration.html), **recommended** for best performance
-  - [Simplified integration](simplified_integration.html)
+  - [Integration instructions](simplified_integration.html)
 
 You can enable the [development mode](debugging.html) to ensure the correctness of the integration.
 

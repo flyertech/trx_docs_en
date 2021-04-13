@@ -1,43 +1,20 @@
-```js
+```html
+<script>
 window._trx.push(
     {
         event: 'trackTransaction',
         transaction: {
-            id: 'xxxxx', // Order number
-            subtotal: xxx.xx,
-            shipping: xxx.xx,
-            discount: xxx.xx,
+            id: 'xxxxx', // Order ID
             total: xxx.xx, // Required
-            coupon: 'xxx', 
-            currency: 'EUR', // EUR by default
+            currency: 'EUR' // EUR by default
         },
-        items: [
-            {id: x, price: xx.xx, quantity: x}, 
-            {id: x, price: xx.xx, quantity: x},
-        ],
-        address: {
-            address: 'xxxxxx',
-            address2: 'xxxxxx',
-            city: 'xxxxx',
-            postalCode: 'xxxxx',
-            country: 'IT',
-            phone: 'xxxxxxxx',
-            phoneMobile: 'xxxxxxxxx',
-        },
-        customer: {
-            firstName: 'Xxxxx',
-            lastName: 'Xxxxxxx',
-            company: 'xxxxxxxx',
-            email: 'xxxxx@xxxx.xx',
-            birthDate: 'yyyy-mm-dd', 
-            gender: 'x', 
-            optin: xxxx // if the users opted in to receiving commercial offers
-        },
-        // Example of integration of ads directly in the page
+        // This will automatically display the appropriate touchpoint according to your settings
         touchpointType: 'auto',
     }
 );
+</script>
 ```
 ```html
+<!-- Only for publishers - Defines the spot where the banner or the offers will be displayed -->
 <div id="tr_touchpoint_container"></div>
 ```
