@@ -5,58 +5,86 @@ sidebar: mydoc_sidebar
 folder: mydoc
 ---
 
+### Download the latest version of the Prestashop module
 
-Obtaining the latest Prestashop module
-You can download the latest version from your dashboard by going to **My Account -> Integration -> Select Prestashop <= 1.7**, click **Download the plugin**
+You can download the latest version of the Prestashop module by going to **My Account -> Integration -> Select Prestashop <= 1.7**, click **Download the plugin**
 
 {% include image.html file="prestashop17/downloadplugin.png" url="images/prestashop17/downloadplugin.png" %}
 
 ### Installing the module
 
-Go to the your Prestashop **Modules and Services** and you install the plugin you just downloaded. At the end of the installation click on **Configure**.
+To install Transactionale on your Prestashop website, you need to log in to the backend and access the **“Modules → Module manager”** section, on the right sidebar.
 
-{% include image.html file="prestashop17/uploadplugin.png" url="images/prestashop17/uploadplugin.png" %}
+{% include image.html file="prestashop17/01.png" url="images/prestashop17/01.png" %}
+
+After accessing the section, there will be an **“Upload a module”** button at the top right corner to be clicked on
+
+{% include image.html file="prestashop17/02.png" url="images/prestashop17/02.png" %}
+
+The following window will appear: 
+
+{% include image.html file="prestashop17/03.png" url="images/prestashop17/03.png" %}
+
+You will then need to upload the module’s zip file:
+
+{% include image.html file="prestashop17/04.png" url="images/prestashop17/04.png" %}
+
+Click **“Configure”** to proceed with the configuration.
 
 
-### Settings details
-You will be redirected to the module configuration page
+### Configuration details
+The following page will appear in Transactionale’s configuration process:
 
-{% include image.html file="prestashop17/4.png" url="images/prestashop17/4.png" %}
+{% include image.html file="prestashop17/05.png" url="images/prestashop17/05.png" %}
 
-The details of the fields displayed are shown below:
+Let’s take a look at <ins>each field</ins> to choose the desired settings:
 
-*Auth Key*|this is used to identify your account. **Follow the instructions below to fill it**.
-*Country*|the two-letter ISO code for the country in which your shop operates. I.E. IT.
-*Touchpoint Type*|how to deliver offers to your customers. Make sure you configure your touchpoints in your Transactionale account. It can be Web, Mail, Web+Mail.
-*Web Touchpoint Id*|if using the web touchpoint described above, you can specify an id, otherwise it will take a default id.
-*Web Touchpoint Text*|if using the web touchpoint described above, you can specify the text to display above the offers.
-*Import leads automatically*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL.
+---
 
-{% include image.html file="prestashop17/5.png" url="images/prestashop17/5.png" %}
+**Transactionale’s Activation/Deactivation**
+To activate or deactivate Transactionale, you can enable/disable the module directly on Prestashop.
 
-### Enabling/Disabing Optin
+---
 
-The **opt-in** must be activated from the **Preferences -> Customers** section.
-{% include image.html file="prestashop17/optin.png" url="images/prestashop17/optin.png" %}
+**Auth Key**
+Authorization code provided by Transactionale to identify your account (follow the instructions below to fill it in)
+
+---
+
+**Country Code**
+Two-letter ISO code for the country in which your shop operates (e.g. it, en, etc…)
+
+---
+
+**Touchpoint Type**
+From the drop-down menu, you can choose one of the following touchpoints to deliver offers to your customers:
+- **Email** → Only an email related to the special offers will be sent;
+
+- **Web** → Only a banner related to the special offers will be displayed on the website;
+
+- **Auto (Web + Mail)** →  This field depends on what users choose in the “Receive offers from our partners” checkbox, enabled by default in Prestashop.
+{% include image.html file="prestashop17/06.png" url="images/prestashop17/06.png" %}
+
+Only by selecting **Web and Mail + Web**, two additional fields appear which are exclusively related to the banner:
+
+- **Web Touchpoint Id** → You need to enter the ID of the div which has been set to be populated with the banner’s data in the template (if you are using the web touchpoint, you need to specify an ID, otherwise it will take a default ID);
+
+- **Web Touchpoint Text** → Banner title to be displayed – “There are special offers for you”, in this case.
+{% include image.html file="prestashop17/07.png" url="images/prestashop17/07.png" %}
+
+### Summary
+
+{% include image.html file="prestashop17/08.png" url="images/prestashop17/08.png" %}
 
 ### Last steps
-
-Copy your Auth Key from your Transactionale account under  **My Account-> Integration**  and paste into the Auth Key of the Prestashop module configuration.
+Copy your Auth Key from your Transactionale account under **My Account-> Integration** and 
 
 {% include image.html file="prestashop17/apikey.png" url="images/prestashop17/apikey.png" %}
 
-Remember to Save the changes.
+paste into the Auth Key field in the configuration page of the Prestashop module.
 
-### Enabling automatic import of leads - Webhook
+### Verify integration 
 
-For the automatic import of leads via webhook you have to select **YES** in the field **Import leads automatically**
+You can verify the correct functioning of the technological integration and the webhook url by following these simple instructions:
 
-{% include image.html file="prestashop17/webhook.png" url="images/prestashop17/webhook.png" %}
-
-Paste the link you see in the **My Account-> Integration** section of your Transactional account in the **Webhook Url** field.
-
-### Verify integration and webhook
-
-You can check the correct functioning of the technological integration and the webhook url through these simple instructions:
-
-{% include_relative partials/link_verify.md %}
+{% include_relative partials/link_verify_integration.md %}
