@@ -5,63 +5,102 @@ sidebar: mydoc_sidebar
 folder: mydoc
 ---
 
-### Obtaining the latest Prestashop module
-You can download the latest version from your dashboard by going to **My Account -> Integration -> Select Woocommerce >= 3.3.0**, click **Download the plugin**.
+### Download the latest version of the Woocommerce module
+You can download the latest version of the Woocommerce module by going to **My Account -> Integration -> Select Woocommerce ->** click **Download the plugin.**
 
 {% include image.html file="woocommerce/downloadplugin.png" url="images/woocommerce/downloadplugin.png" %}
 
 ### Installing the module
 
-From the Plugin section of your WooCommerce click on **Add plugin** and you install the plugin you just downloaded.
+To install the Transactionale plugin, you need to log in to the backend of your website and go to the **Plugin section**:
 {% include image.html file="woocommerce/1.png" url="images/woocommerce/1.png" %}
 
-You will be redirected to the Plugin section and you will find Trasactionale.
+Click **“Add new”**
 
-If you haven't specified any Terms and Conditions page for your shop you will see the **Woocommerce Checkout Settings** link
+{% include image.html file="woocommerce/02.png" url="images/woocommerce/02.png" %}
 
-{% include image.html file="woocommerce/checkoutsettings.png" url="images/woocommerce/checkoutsettings.png" %}
+Click **“Upload Plugin”**
 
-On this page you will need to insert the page where **Terms and Conditions** of your shop are specified.
+{% include image.html file="woocommerce/03.png" url="images/woocommerce/03.png" %}
 
-{% include image.html file="woocommerce/termsconditions.png" url="images/woocommerce/termsconditions.png" %}
+Upload the plugin’s zip file by clicking on the **“Choose file”** button
 
-Remember to Save the changes.
+{% include image.html file="woocommerce/04.png" url="images/woocommerce/04.png" %}
 
-Return to the **Plugin** section
+Then click **“Install Now”**
 
-Click on **Settings** related to the Transactionale plugin.
+{% include image.html file="woocommerce/05.png" url="images/woocommerce/05.png" %}
 
-{% include image.html file="woocommerce/settings.png" url="images/woocommerce/settings.png" %}
+After installing the plugin, the “Transactionale” field will be added to the sidebar
 
-### Settings details
+{% include image.html file="woocommerce/06.png" url="images/woocommerce/06.png" %}
 
-You will be redirected to the module configuration page
+After installation, you will move on to the module configuration.
 
-The details of the fields displayed are shown below:
+### Wordpress module configuration
+The following page will appear in Transactionale’s configuration process:
 
-*Transactionale status*|select Enabled to enable the plugin.
-*Auth Key*|this is used to identify your account. **Follow the instructions below to fill it**.
-*Country code*|the two-letter ISO code for the country in which your shop operates. I.E. IT.
-*Product Format*|indicates the format of the product that the teeth send (Full or Id only).
-*Touchpoint Type*|how to deliver offers to your customers. Make sure you configure your touchpoints in your Transactionale account. It can be Web, Mail, Web+Mail.
-*Web Touchpoint Text*|if using the web touchpoint described above, you can specify the text to display above the offers.
-*Import leads automatically*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL.
+{% include image.html file="woocommerce/07.png" url="images/woocommerce/07.png" %}
 
-{% include image.html file="woocommerce/configuration.png" url="images/woocommerce/configuration.png" %}
+Let’s take a look at each field to choose the desired settings:
 
+---
+
+**Transactionale Status**
+- **Enable** → Transactionale will be activated and ready to be used; 
+- **Disabled** → Transactionale will be deactivated.
+
+---
+
+**Auth Key**
+Authorization code provided by Transactionale to identify your account
+
+---
+
+**Country Code**
+Two-letter ISO code for the country in which your shop operates (e.g. it, en, etc…)
+
+---
+
+**Show 3rd Party Opt-In checkbox**
+- **Enable** → By enabling this feature, the following checkbox is displayed during checkout: 
+{% include image.html file="woocommerce/08.png" url="images/woocommerce/08.png" %}
+
+- <ins>What happens if the acceptance box is checked</ins>: An email is sent while the banner is not displayed;
+- <ins>What happens if the acceptance box is NOT checked</ins>: No email is sent and only the banner is displayed
+
+- **Disabled** → The checkbox does not appear during checkout; by default, no email is sent and only the banner is displayed.
+
+* This feature is specific to Wordpress.
+
+---
+
+**Touchpoint Type**
+From the drop-down menu, you can choose one of the following touchpoints to deliver offers to your customers:
+- **Email** → Only an email related to the special offers will be sent; 
+- **Web** → Only a banner related to the special offers will be displayed on the website;
+- **Auto (Web + Mail)** → This field depends on what users choose in the 3rd party opt-in checkbox.
+
+Only by selecting Web and Auto, two additional fields appear which are exclusively related to the banner:
+- **Web Touchpoint Id** → You need to enter the ID of the div which has been set to be populated with the banner’s data in the template;
+- **Web Touchpoint Text** → Banner title to be displayed – “Special offers reserved for you”, in this case.
+
+{% include image.html file="woocommerce/09.png" url="images/woocommerce/09.png" %}
+
+### Summary
+
+{% include image.html file="woocommerce/10.png" url="images/woocommerce/10.png" %}
+
+*Only for Wordpress 
 
 ### Last steps
 
-Copy your Auth Key from your Transactionale account under  **My Account-> Integration**  and paste into the Auth Key of the Woocommerce plugin configuration.
+Copy your Auth Key from your Transactionale account under **My Account-> Integration** and paste into the Auth Key field in the configuration page of the WooCommerce plugin.
 
 {% include image.html file="woocommerce/apikey.png" url="images/woocommerce/apikey.png" %}
 
-After completing all the required fields click on Save.
+### Verify integration
 
-{% include image.html file="woocommerce/configurationsave.png" url="images/woocommerce/configurationsave.png" %}
+You can verify the correct functioning of the technological integration and the webhook url by following these simple instructions:
 
-### Verify integration and webhook
-
-You can check the correct functioning of the technological integration and the webhook url through these simple instructions:
-
-{% include_relative partials/link_verify.md %}
+{% include_relative partials/link_verify_integration.md %}
