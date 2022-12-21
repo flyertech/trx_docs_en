@@ -6,66 +6,86 @@ folder: mydoc
 ---
 
 
-### Obtaining the latest Prestashop module
-You can download the latest version from your dashboard by going to **My Account -> Integration -> Select Prestashop <= 1.6**, click **Download the plugin**
+### Download the latest version of the Prestashop module
+You can download the latest version of the Prestashop module by going to **My Account -> Integration -> Select Prestashop <= 1.6**, click **Download the plugin**
 
 {% include image.html file="prestashop16/downloadplugin.png" url="images/prestashop16/downloadplugin.png" %}
 
 ### Installing the module
 
-Go to the your Prestashop **Modules and Services** click on the **Add new module**. A form will appear where you can upload the module's zip file, click **Choose a file** and **Upload this module**.
+To install Transactionale on your Prestashop website, you need to log in to the backend and access the **“Modules → Module manager”** section, on the right sidebar.
 
-{% include image.html file="prestashop16/1.png" url="images/prestashop16/1.png" %}
+{% include image.html file="prestashop16/01.png" url="images/prestashop16/01.png" %}
 
-The list of modules will appear, in particular you will see the Transactionale module just uploaded. You will have to click on **Install**
+After accessing the section, there will be an **“Upload a module”** button at the top right corner to be clicked on
 
-{% include image.html file="prestashop16/2.png" url="images/prestashop16/2.png" %}
+{% include image.html file="prestashop16/02.png" url="images/prestashop16/02.png" %}
 
-A popup will appear, click on **Proceed with installation**
+The following window will appear: 
 
-{% include image.html file="prestashop16/3.png" url="images/prestashop16/3.png" %}
+{% include image.html file="prestashop16/03.png" url="images/prestashop16/03.png" %}
 
-### Settings details
+You will then need to upload the module’s zip file:
 
-You will be redirected to the module configuration page
+{% include image.html file="prestashop16/04.png" url="images/prestashop16/04.png" %}
 
-{% include image.html file="prestashop16/4.png" url="images/prestashop16/4.png" %}
+Click **“Configure”** to proceed with the configuration.
 
-The details of the fields displayed are shown below:
 
-*Auth Key*|this is used to identify your account. **Follow the instructions below to fill it**.
-*Country*|the two-letter ISO code for the country in which your shop operates. I.E. IT.
-*Touchpoint Type*|how to deliver offers to your customers. Make sure you configure your touchpoints in your Transactionale account. It can be Web, Mail, Web+Mail.
-*Web Touchpoint Id*|if using the web touchpoint described above, you can specify an id, otherwise it will take a default id.
-*Web Touchpoint Text*|if using the web touchpoint described above, you can specify the text to display above the offers.
-*Import leads automatically*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL.
+### Configuration details
+The following page will appear in Transactionale’s configuration process:
 
-{% include image.html file="prestashop16/5.png" url="images/prestashop16/5.png" %}
+{% include image.html file="prestashop16/05.png" url="images/prestashop16/05.png" %}
 
-### Enabling/Disabing Optin
+Let’s take a look at <ins>each field</ins> to choose the desired settings:
 
-The **opt-in** must be activated from the **Preferences -> Customers** section.
+---
 
-{% include image.html file="prestashop16/optin.png" url="images/prestashop16/optin.png" %}
+**Transactionale’s Activation/Deactivation**
+To activate or deactivate Transactionale, you can enable/disable the module directly on Prestashop.
+
+---
+
+**Auth Key**
+Authorization code provided by Transactionale to identify your account (follow the instructions below to fill it in)
+
+---
+
+**Country Code**
+Two-letter ISO code for the country in which your shop operates (e.g. it, en, etc…)
+
+---
+
+**Touchpoint Type**
+From the drop-down menu, you can choose one of the following touchpoints to deliver offers to your customers:
+- **Email** → Only an email related to the special offers will be sent;
+
+- **Web** → Only a banner related to the special offers will be displayed on the website;
+
+- **Auto (Web + Mail)** →  This field depends on what users choose in the “Receive offers from our partners” checkbox, enabled by default in Prestashop.
+{% include image.html file="prestashop16/06.png" url="images/prestashop16/06.png" %}
+
+Only by selecting **Web and Mail + Web**, two additional fields appear which are exclusively related to the banner:
+
+- **Web Touchpoint Id** → You need to enter the ID of the div which has been set to be populated with the banner’s data in the template (if you are using the web touchpoint, you need to specify an ID, otherwise it will take a default ID);
+
+- **Web Touchpoint Text** → Banner title to be displayed – “There are special offers for you”, in this case.
+{% include image.html file="prestashop16/07.png" url="images/prestashop16/07.png" %}
+
+
+### Summary
+
+{% include image.html file="prestashop16/08.png" url="images/prestashop16/08.png" %}
 
 ### Last steps
-
-Copy your Auth Key from your Transactionale account under  **My Account-> Integration**  and paste into the Auth Key of the Prestashop module configuration.
+Copy your Auth Key from your Transactionale account under **My Account-> Integration** and 
 
 {% include image.html file="prestashop16/apikey.png" url="images/prestashop16/apikey.png" %}
 
-Remember to Save the changes.
+paste into the Auth Key field in the configuration page of the Prestashop module.
 
-### Enabling automatic import of leads - Webhook
+### Verify integration 
 
-For the automatic import of leads via webhook you have to select **YES** in the field **Import leads automatically**.
+You can verify the correct functioning of the technological integration and the webhook url by following these simple instructions:
 
-{% include image.html file="prestashop16/webhook.png" url="images/prestashop16/webhook.png" %}
-
-Paste the link you see in the **My Account-> Integration** section of your Transactional account in the **Webhook Url** field.
-
-### Verify integration and webhook
-
-You can check the correct functioning of the technological integration and the webhook url through these simple instructions:
-
-{% include_relative partials/link_verify.md %}
+{% include_relative partials/link_verify_integration.md %}
